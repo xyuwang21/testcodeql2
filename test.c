@@ -39,6 +39,7 @@ void example3() {
 
     // 内存泄漏：没有调用 free 释放内存
     // 忘记释放内存，导致无法回收分配的内存
+    free(str);
 }
 
 void example4() {

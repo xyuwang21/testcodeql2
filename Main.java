@@ -1,11 +1,12 @@
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
 
 public class Main {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         String str = null;
         // 试图调用 null 引用的方法
         System.out.println(str.length());
@@ -20,7 +21,10 @@ public class Main {
         System.out.println(number);
 
         BufferedReader reader = new BufferedReader(new FileReader("test.txt"));
-        System.out.println(reader.readLine());
+        try {
+            System.out.println(reader.readLine());
+        } catch (IOException ex) {
+        }
     }
     
 }
