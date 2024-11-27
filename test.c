@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-void example1() {
-    int *ptr = NULL;
+// void example1() {
+//     int *ptr = NULL;
 
-    // 存空指针引用
-    *ptr = 10;  // 错误：尝试解引用空指针
+//     // 存空指针引用
+//     *ptr = 10;  // 错误：尝试解引用空指针
 
-    printf("Value: %d\n", *ptr);
-}
+//     printf("Value: %d\n", *ptr);
+// }
 
 void example2() {
     int *ptr = (int *)malloc(sizeof(int));
